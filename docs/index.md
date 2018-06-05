@@ -7,7 +7,7 @@ With some tweaks (installing new Python and two Python packages), this software 
 
 Copy files to miner machine.
 
-Edit `/etc/rc.local` so `client.py` is automatically executed when computer boots up. Change `<full_path>` to full path to client and log directory respectivelly. Change `<user>` to user name with rights to restart a computer (on EthOS, use `ethos`).
+Edit `/etc/rc.local` so `client.py` is automatically executed when computer boots up. Change `<full_path>` to full path to client and log directory respectively. Change `<user>` to user name with rights to restart a computer (on EthOS, use `ethos`).
 
     su - c "python3.5 <full_path>/client.py > <full_path>/logs/output.txt 2>&1 &" - <user>
 
