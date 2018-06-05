@@ -1,0 +1,12 @@
+0.0.1
+=====
+
+- First version with basic functionality. Client uploads miner data (hashrate, runtime, name, version, ...) to server
+  for monitoring purposes.
+
+0.0.2
+=====
+
+- Changed project structure - almost everything is in client folder.
+- Client uploads "interval" from its config. 
+- Added App class with callbacks from twisted's Factory class
