@@ -13,15 +13,19 @@ Edit `/etc/rc.local` so `client.py` is automatically executed when computer boot
 
 Install pip:
 
-    curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py
+    curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
 and then run:
 
-    python3.5 get-pip.py
+    sudo python3.5 get-pip.py
+
+Install python developer package:
+
+    sudo apt-get-ubuntu install python3.5-dev
 
 Install `twisted` and `requests` packages
 
-    pip3.5 install twisted requests
+    sudo pip3.5 install twisted requests
 
 If you haven't done it yet, change timezone. Full list of valid values may be listed with `timedatectl list-timezones`.
 
